@@ -1,8 +1,8 @@
 object DataModule4: TDataModule4
   OldCreateOrder = False
-  Left = 274
-  Top = 274
-  Height = 203
+  Left = 340
+  Top = 201
+  Height = 237
   Width = 324
   object ZConnection: TZConnection
     ControlsCodePage = cGET_ACP
@@ -15,7 +15,7 @@ object DataModule4: TDataModule4
     Database = 'db_penjualan'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'libmysql.dll'
+    LibraryLocation = 'C:\Users\User\Downloads\libmysql.dll'
     Left = 40
     Top = 24
   end
@@ -30,7 +30,35 @@ object DataModule4: TDataModule4
   end
   object dskategori: TDataSource
     DataSet = Zkategori
-    Left = 112
+    Left = 109
     Top = 80
+  end
+  object dssatuan: TDataSource
+    DataSet = Zsatuan
+    Left = 169
+    Top = 80
+  end
+  object Zsatuan: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'Select * from satuan')
+    Params = <>
+    Left = 168
+    Top = 33
+  end
+  object Zcostumer: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'Select * from kustomer')
+    Params = <>
+    Left = 211
+    Top = 25
+  end
+  object dscostumer: TDataSource
+    DataSet = Zcostumer
+    Left = 221
+    Top = 83
   end
 end

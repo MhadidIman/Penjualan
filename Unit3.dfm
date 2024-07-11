@@ -1,10 +1,10 @@
 object Form3: TForm3
-  Left = 364
-  Top = 132
-  Width = 609
-  Height = 540
+  Left = 329
+  Top = 199
+  Width = 557
+  Height = 342
   Caption = 'KATEGORI'
-  Color = clBtnFace
+  Color = clMaroon
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -14,8 +14,8 @@ object Form3: TForm3
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 80
-    Top = 40
+    Left = 61
+    Top = 27
     Width = 39
     Height = 18
     Caption = 'NAME'
@@ -27,8 +27,8 @@ object Form3: TForm3
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 88
-    Top = 264
+    Left = 101
+    Top = 251
     Width = 120
     Height = 18
     Caption = 'MASUKKAN NAME'
@@ -40,66 +40,84 @@ object Form3: TForm3
     ParentFont = False
   end
   object Edit1: TEdit
-    Left = 136
-    Top = 40
-    Width = 249
+    Left = 149
+    Top = 27
+    Width = 337
     Height = 21
     TabOrder = 0
   end
-  object Button1: TButton
-    Left = 136
-    Top = 80
+  object bsimpan: TButton
+    Left = 149
+    Top = 67
     Width = 75
     Height = 25
-    Caption = 'INSERT'
+    Caption = 'SIMPAN'
     TabOrder = 1
-    OnClick = Button1Click
+    OnClick = bsimpanClick
   end
-  object Button2: TButton
-    Left = 224
-    Top = 80
+  object bubah: TButton
+    Left = 237
+    Top = 67
     Width = 75
     Height = 25
-    Caption = 'UPDATE'
+    Caption = 'UBAH'
     TabOrder = 2
-    OnClick = Button2Click
+    OnClick = bubahClick
   end
-  object Button3: TButton
-    Left = 312
-    Top = 80
+  object bhapus: TButton
+    Left = 325
+    Top = 67
     Width = 75
     Height = 25
-    Caption = 'DELETE'
+    Caption = 'HAPUS'
     TabOrder = 3
-    OnClick = Button3Click
+    OnClick = bhapusClick
+  end
+  object Edit2: TEdit
+    Left = 229
+    Top = 251
+    Width = 153
+    Height = 21
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 389
+    Top = 251
+    Width = 97
+    Height = 25
+    Caption = 'CARI'
+    TabOrder = 5
+  end
+  object Bbaru: TButton
+    Left = 53
+    Top = 67
+    Width = 75
+    Height = 25
+    Caption = 'BARU'
+    TabOrder = 6
+    OnClick = BbaruClick
+  end
+  object bbatal: TButton
+    Left = 413
+    Top = 67
+    Width = 75
+    Height = 25
+    Caption = 'BATAL'
+    TabOrder = 7
   end
   object DBGrid1: TDBGrid
-    Left = 120
-    Top = 120
-    Width = 409
+    Left = 53
+    Top = 115
+    Width = 433
     Height = 113
-    DataSource = DataModule4.dskategori
-    TabOrder = 4
+    DataSource = DataModule4.dssatuan
+    TabOrder = 8
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
     OnDblClick = DBGrid1DblClick
-  end
-  object Edit2: TEdit
-    Left = 216
-    Top = 264
-    Width = 153
-    Height = 21
-    TabOrder = 5
-  end
-  object Button4: TButton
-    Left = 376
-    Top = 264
-    Width = 75
-    Height = 25
-    Caption = 'CARI'
-    TabOrder = 6
   end
 end

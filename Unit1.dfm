@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 229
-  Top = 166
+  Left = 306
+  Top = 162
   Width = 585
   Height = 540
   Caption = 'Form1'
@@ -36,12 +36,14 @@ object Form1: TForm1
       end
       object Satuan1: TMenuItem
         Caption = 'SATUAN'
+        OnClick = Satuan1Click
       end
       object Suplier1: TMenuItem
         Caption = 'SUPLIER'
       end
       object Kustomer1: TMenuItem
         Caption = 'KUSTOMER'
+        OnClick = Kustomer1Click
       end
     end
     object ransaksi1: TMenuItem
